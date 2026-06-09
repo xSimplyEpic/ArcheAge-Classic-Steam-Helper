@@ -1,7 +1,6 @@
 # ArcheAge Classic Steam Helper
 
-A lightweight launcher utility for **ArcheAge Classic** that improves **Steam compatibility**, allows switching between **ArcheAge** and **ArcheAge: Unchained**, and provides a cleaner launch experience.
-
+A lightweight launcher utility for **ArcheAge Classic** that improves **Steam compatibility**, allows switching between **ArcheAge** and **ArcheAge: Unchained**.
 <img width="261" height="379" alt="image" src="https://github.com/user-attachments/assets/64544922-3f09-4c7c-9923-dbef6ed7227d" />
 
 <img width="195" height="105" alt="image" src="https://github.com/user-attachments/assets/08bb53f7-a92e-43de-9fa4-73c55cf3a670" />
