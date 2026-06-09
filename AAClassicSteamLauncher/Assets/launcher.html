@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+
+		<meta name="viewport"
+			  content="width=device-width, initial-scale=1.0" />
+
+		<title>
+			ArcheAge Classic Steam Helper
+		</title>
+
+		<link rel="stylesheet"
+			  href="css/launcher.css" />
+	</head>
+
+	<body>
+
+		<div class="app">
+
+			<!-- TOP BAR -->
+
+			<div class="topbar">
+
+				<div class="logo-section">
+
+					<img src="images/logo.png"
+						 class="logo"
+						 alt="Logo" />
+
+				</div>
+
+				<div class="nav-links">
+
+					<button id="discordBtn"
+							class="icon-nav-btn">
+
+						<img src="images/discord.png"
+							 class="topbar-icon"
+							 alt="Discord" />
+
+					</button>
+
+					<button id="wikiBtn"
+							class="icon-nav-btn">
+
+						<img src="images/wiki.png"
+							 class="topbar-icon"
+							 alt="Wiki" />
+
+					</button>
+
+					<button id="minBtn"
+							class="window-btn">
+						—
+					</button>
+
+					<button id="closeBtn"
+							class="window-btn">
+						✕
+					</button>
+
+				</div>
+
+		
+
+			</div>
+
+			<div class="content-wrapper">
+
+				<!-- MAIN CONTENT -->
+
+				<div class="main-launcher">
+
+					<div class="launcher-container">
+
+						<!-- PLAY BUTTON -->
+
+						<button id="playBtn"
+								class="play-button">
+
+							<img src="images/play-button.png"
+								 class="play-image"
+								 alt="Play" />
+
+						</button>
+
+						<!-- STATUS CARD -->
+
+						<div class="card">
+
+							<div class="card-title">
+								LAUNCHER STATUS
+							</div>
+
+							<!-- STEAM READY -->
+
+							<div class="status-row">
+
+								<div>
+
+									<div class="status-name">
+										Steam Ready
+									</div>
+
+									<div class="status-sub">
+										Steam client detected
+									</div>
+
+								</div>
+
+								<div class="ready">
+									CHECKING
+								</div>
+
+							</div>
+
+							<div class="divider"></div>
+
+							<!-- GAME FOUND -->
+
+							<div class="status-row">
+
+								<div>
+
+									<div class="status-name">
+										ArcheAge Classic Found
+									</div>
+
+									<div class="status-sub">
+										Installation verified
+									</div>
+
+								</div>
+
+								<div class="ready">
+									CHECKING
+								</div>
+
+							</div>
+
+							<div class="divider"></div>
+
+							<!-- COMPATIBILITY -->
+
+							<div class="status-row">
+
+								<div>
+
+									<div class="status-name">
+										Compatibility Mode
+									</div>
+
+									<div class="status-sub"
+										 id="compatibilitySub">
+
+										Steam AppID: Auto Detect
+
+									</div>
+
+									<div class="owned-games">
+
+										<div class="owned-game">
+
+											<div id="aaDot"
+												 class="owned-dot">
+											</div>
+
+											<span>
+												ArcheAge
+											</span>
+
+										</div>
+
+										<div class="owned-game">
+
+											<div id="unchainedDot"
+												 class="owned-dot">
+											</div>
+
+											<span>
+												ArcheAge: Unchained
+											</span>
+
+										</div>
+
+									</div>
+
+								</div>
+
+								<div class="ready">
+									ACTIVE
+								</div>
+
+							</div>
+
+						</div>
+
+						<!-- SETTINGS BUTTON -->
+
+						<button id="settingsBtn"
+								class="settings-card">
+
+							<div>
+
+								<div class="settings-title">
+									LAUNCHER SETTINGS
+								</div>
+
+								<div class="settings-sub">
+									Configure launcher paths
+								</div>
+
+							</div>
+
+							<div class="arrow">
+								>
+							</div>
+
+						</button>
+
+					</div>
+
+				</div>
+
+				<!-- SETTINGS PANEL -->
+
+				<div id="settingsPanel"
+					 class="settings-panel">
+
+					<div class="panel-title">
+						LAUNCHER SETTINGS
+					</div>
+
+					<!-- STEAM -->
+
+					<div class="setting-group">
+
+						<label>
+							Steam Library Path
+						</label>
+
+						<div class="status-row-modern">
+
+							<div id="steamDetectStatus"
+								 class="detect-status">
+								Detecting...
+							</div>
+
+							<button id="resetSteamBtn"
+									class="reset-modern-btn">
+								↺
+							</button>
+
+						</div>
+
+						<input id="steamPath"
+							   type="text"
+							   readonly=""
+							   placeholder="Detecting Steam..." />
+
+						<button id="browseSteamBtn"
+								class="browse-btn">
+							Browse Override
+						</button>
+
+					</div>
+
+					<!-- STEAM VERSION -->
+
+					<div class="setting-group">
+
+						<label>
+							Preferred Steam Version
+						</label>
+
+						<select id="steamVersionSelect"
+								class="steam-version-select">
+
+							<option value="Auto">
+								Auto Detect (Recommended)
+							</option>
+
+							<option value="ArcheAge">
+								ArcheAge
+							</option>
+
+							<option value="Unchained">
+								ArcheAge Unchained
+							</option>
+
+						</select>
+
+					</div>
+
+					<!-- GAME -->
+
+					<div class="setting-group">
+
+						<label>
+							ArcheAge Install Path
+						</label>
+
+						<div class="status-row-modern">
+
+							<div id="gameDetectStatus"
+								 class="detect-status">
+								Detecting...
+							</div>
+
+							<button id="resetGameBtn"
+									class="reset-modern-btn">
+								↺
+							</button>
+
+						</div>
+
+						<input id="gamePath"
+							   type="text"
+							   readonly=""
+							   placeholder="Detecting Install..." />
+
+						<button id="browseGameBtn"
+								class="browse-btn">
+							Browse Override
+						</button>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<!-- FOOTER -->
+
+			<div class="footer">
+
+				<div class="footer-ready">
+					READY
+				</div>
+
+				<div class="footer-divider"></div>
+
+				<div>
+					Steam Compatibility Mode Active
+				</div>
+
+				<div class="footer-divider"></div>
+
+				<div id="footerAppId">
+					Steam AppID: Auto Detect
+				</div>
+
+				<div class="version">
+					v1.0.0
+				</div>
+
+			</div>
+
+			<script defer=""
+					src="js/launcher.js">
+			</script>
+
+		</div>
+		
+
+	</body>
+
+</html>
+
